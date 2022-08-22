@@ -13,12 +13,12 @@
 
 <body>
     <header class="header">
-        <img src="assets/img/header_logo.png" alt="logo_steam">
+        <img class="header__logo" src="assets/img/header_logo.png" alt="logo_steam">
     </header>
 
     <main class="main">
-        <h1>Create your account</h1>
-        <form>
+        <h1 class="main__title">Create your account</h1>
+        <form class="main_registration-form">
             <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email"
@@ -62,7 +62,7 @@
             </div>
 
             <div class="error__message" id="errorMessage"></div>
-            <button type="submit" class="btn btn-dark" id="register">Register</button>
+            <button type="submit" class="btn btn-outline-light btn-lg" id="register">Register</button>
         </form>
     </main>
 

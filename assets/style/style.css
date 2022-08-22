@@ -1,15 +1,35 @@
+/* *{
+    border: 1px solid salmon;
+} */
 .header {
+    display: flex;
+    justify-content: center;
+
+    padding-top: 1%;
+    padding-bottom: 2%;
+
     background-color: #212429;
 }
 
+.header__logo {
+    width: 20%;
+}
+
 .main {
+    min-height: 45rem;
+
     background-image: url(../img/bg.jpg);
 
     color: #fff;
 }
 
+.main__title,
+.main_registration-form {
+    width: 35%;
+    margin-left: 30%;
+}
+
 .error__message {
-    width: 50%;
     margin: auto;
     text-align: center;
 
@@ -18,5 +38,7 @@
 }
 
 .error__message_border {
+    margin-top: 2%;
+    margin-bottom: 2%;
     border: 1px solid darkred;
 }

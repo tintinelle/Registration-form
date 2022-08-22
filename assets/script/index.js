@@ -40,6 +40,7 @@ function check(){
 const checkValidEMail = () => {
     const reg = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
     const valid = reg.test(email.value);
+    document.getElementById('emailError').innerHTML = '';
     if (! valid) { 
         document.getElementById('emailError').innerHTML = 'Please enter a valid email address.';
     }
@@ -113,6 +114,7 @@ const checkAge = () => {
 
 const checkCheckbox = () => {
     const checkbox = document.getElementById("terms");
+    errorMessage.classList.remove("error__message_border");;
     if (checkbox.checked != true) {
         errorMessage.classList.add("error__message_border");
         errorMessage.innerHTML += 'You must agree to the Steam Subscriber Agreement to continue.';
