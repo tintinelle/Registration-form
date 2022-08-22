@@ -7,3 +7,16 @@
 
     color: #fff;
 }
+
+.error__message {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    background-color: #fff;
+    color: darkred;
+}
+
+.error__message_border {
+    border: 1px solid darkred;
+}
