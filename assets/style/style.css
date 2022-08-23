@@ -1,6 +1,13 @@
-/* *{
-    border: 1px solid salmon;
-} */
+
+a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+a:hover {
+    color: black;
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -29,6 +36,21 @@
     margin-left: 30%;
 }
 
+.form-group {
+    margin-bottom: 3%;
+
+    font-size: 1.2em;
+}
+
+.form-control {
+    margin-top: 1%;
+
+    background-color: #32353C;
+    border: none;
+
+    color: #97a4af;
+}
+
 .error__message {
     margin: auto;
     text-align: center;
@@ -40,5 +62,9 @@
 .error__message_border {
     margin-top: 2%;
     margin-bottom: 2%;
+    border: 1px solid darkred;
+}
+
+.error__input {
     border: 1px solid darkred;
 }
